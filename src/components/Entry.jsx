@@ -1,3 +1,5 @@
+import marker from "../assets/marker.png"
+
 export function Entry({img,title, country, googleMapsLink, dates,text}) {
 
     return (
@@ -8,7 +10,7 @@ export function Entry({img,title, country, googleMapsLink, dates,text}) {
             </div>
             <div className="text-container">
                 <div className="location-container">
-                    <img src="./src/assets/marker.png" className="marker"></img>
+                    <img src={marker} className="marker"></img>
                     <span>{country}</span>
                     <a href={googleMapsLink} target="_blank">View on Google Maps</a>
                 </div>

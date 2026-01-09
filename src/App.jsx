@@ -6,14 +6,10 @@ import array from "./data"
 
 export default function App(){
  
-    const places = array.map( place => {
+    const places = array.map( entry => {
         return (<Entry 
-        img={place.img}
-        title={place.title}
-        country={place.country}
-        googleMapsLink={place.googleMapsLink}
-        dates={place.dates}
-        text={place.text}
+        key={entry.id}
+        entry={entry}
 />
 )
 })
